@@ -28,8 +28,8 @@ class Web extends CI_Controller
     {
         $data['judul'] = "Halaman User";
         $data['user'] =$this->ModelUser->getUser()->result_array();
-        $this->load->view('v_header',$data);
-        $this->load->view('v_user',$data);
-        $this->load->view('v_footer',$data);
+        $this->load->view("v_header",$data);
+        $this->load->view("v_user",$data);
+        $this->load->view("v_footer",$data);
     }
 }
